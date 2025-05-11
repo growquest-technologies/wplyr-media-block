@@ -8,7 +8,7 @@
 		</div>
 		<ul class="icon-list">
 			<li class="list-item">
-				<a href="https://devopts.com/contact/" target="_blank">
+				<a href="https://growquest.io/contact/" target="_blank">
 					<span class="dashicons dashicons-editor-help"> </span>
 					<?php _e( 'Contact Plugin Support Team', $plugin_name ); ?>
 				</a>

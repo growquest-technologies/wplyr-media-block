@@ -5,7 +5,7 @@
  * A class definition that includes attributes and functions used across both the
  * public-facing side of the site and the admin area.
  *
- * @link       https://devopts.com
+ * @link       https://growquest.io
  * @since      1.0.0
  *
  * @package    Wplyr
@@ -30,7 +30,7 @@ use Carbon_Fields\Field;
  * @since      1.0.0
  * @package    Wplyr
  * @subpackage Wplyr/includes
- * @author     WeCodify Co. <info@devopts.com>
+ * @author     GrowQuest <info@grrowquest.io>
  */
 class Wplyr {
 

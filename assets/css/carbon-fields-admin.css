@@ -11,7 +11,7 @@
 .carbon-theme-options input[type=color]:focus, .carbon-theme-options input[type=date]:focus, .carbon-theme-options input[type=datetime-local]:focus, .carbon-theme-options input[type=datetime]:focus, .carbon-theme-options input[type=email]:focus, .carbon-theme-options input[type=month]:focus, .carbon-theme-options input[type=number]:focus, .carbon-theme-options input[type=password]:focus, .carbon-theme-options input[type=search]:focus, .carbon-theme-options input[type=tel]:focus, .carbon-theme-options input[type=text]:focus, .carbon-theme-options input[type=time]:focus, .carbon-theme-options input[type=url]:focus, .carbon-theme-options input[type=week]:focus, .carbon-theme-options select:focus, .carbon-theme-options textarea:focus { -webkit-box-shadow: 0 0 0 1px #2271b1; box-shadow: 0 0 0 1px #2271b1; }
 
 .carbon-theme-options .plugin-options-top { margin: 0 0 15px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; min-height: 60px; }
-.carbon-theme-options .plugin-options-top .plugin-options-top-image > img { display: block; max-width: 60px; margin-right: 15px; border-radius: 3px; }
+.carbon-theme-options .plugin-options-top .plugin-options-top-image > img { display: block; width: 60px; margin-right: 15px; border-radius: 3px; }
 .carbon-theme-options .plugin-options-top .plugin-options-top-title > h3 { margin: 0; font-weight: 600; font-size: 23px; line-height: 26px; }
 .carbon-theme-options .plugin-options-top .plugin-options-top-title > h3 span { font-size: 14px; display: block; }
 

@@ -11,7 +11,7 @@ $player_class = [ 'wplyr-player plyr__video-embed' ];
 $player_class[] = 'wplyr-player-' . $data['wplyr_type'];
 
 // player class Gutenberg class.
-$player_class[] = isset( $attributes['className'] ) ? $attributes['className'] : '';
+$player_class[] = $attributes['className'] ?? '';
 
 // merge the class.
 $player_class = join( ' ', $player_class );

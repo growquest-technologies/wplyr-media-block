@@ -10,7 +10,7 @@ if ( ! $audio_sources = $data['wplyr_audio_sources'] ) {
 }
 
 // player options.
-$player_options = isset( $data['wplyr_media_options'] ) ? $data['wplyr_media_options'] : [];
+$player_options = $data['wplyr_media_options'] ?? [];
 $player_options = join( ' ', $player_options );
 
 // default player class
@@ -20,7 +20,7 @@ $player_class = [ 'wplyr-player' ];
 $player_class[] = 'wplyr-player-' . $data['wplyr_type'];
 
 // player class Gutenberg class.
-$player_class[] = isset( $attributes['className'] ) ? $attributes['className'] : '';
+$player_class[] = $attributes['className'] ?? '';
 
 // merge the class.
 $player_class = join( ' ', $player_class );

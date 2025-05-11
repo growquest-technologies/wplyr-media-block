@@ -395,14 +395,13 @@ class Wplyr {
 		// empty argument array
 		$args = [];
 
-		if ( $controls = carbon_get_theme_option( 'wplyr_controls' ) ) {
-			$args['controls'] = $controls;
-		}
+		// always set controls if the user has saved them (even if empty)
+		$args['controls'] = carbon_get_theme_option( 'wplyr_controls' );
 
-		if ( $settings = carbon_get_theme_option( 'wplyr_settings' ) ) {
-			$args['settings'] = $settings;
-		}
+		// always set settings (empty array will now override the defaults)
+		$args['settings'] = carbon_get_theme_option( 'wplyr_settings' );
 
+		// and likewise for seekTime, ads, etc…
 		if ( $seektime = carbon_get_theme_option( 'wplyr_seektime' ) ) {
 			$args['seekTime'] = $seektime;
 		}

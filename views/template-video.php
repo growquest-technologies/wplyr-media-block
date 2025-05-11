@@ -14,7 +14,7 @@ if ( ! $video_sources = $data['wplyr_video_sources'] ) {
 $poster = isset( $data['wplyr_video_poster'] ) ? 'poster="' . $data['wplyr_video_poster'] . '"' : '';
 
 // player options.
-$player_options = isset( $data['wplyr_media_options'] ) ? $data['wplyr_media_options'] : [];
+$player_options = $data['wplyr_media_options'] ?? [];
 $player_options = join( ' ', $player_options );
 
 // video captions.
@@ -26,7 +26,7 @@ $player_class = [ 'wplyr-player' ];
 // player class type.
 $player_class[] = 'wplyr-player-' . $data['wplyr_type'];
 // player class Gutenberg class.
-$player_class[] = isset( $attributes['className'] ) ? $attributes['className'] : '';
+$player_class[] = $attributes['className'] ?? '';
 
 // merge the class.
 $player_class = join( ' ', $player_class );
